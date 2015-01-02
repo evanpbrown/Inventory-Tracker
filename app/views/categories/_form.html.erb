@@ -1,0 +1,11 @@
+<%= simple_form_for(@category) do |f| %>
+
+  <div class="split-fields">
+    <div class="field">
+        <%= f.input :name, :placeholder => "Name", :label => false %>
+    </div>
+    <div class="button">
+        <%= f.button :submit, "Add Category" %>
+    </div>  
+  </div>
+<% end %>
